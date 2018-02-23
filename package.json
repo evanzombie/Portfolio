@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --w",
+    "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"src/js/*.{js,jsx}\""
+  },
+  "author": "Wenlong Yu",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1"
+  }
+}
