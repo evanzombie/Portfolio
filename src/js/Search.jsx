@@ -4,12 +4,13 @@ import React, { Component } from "react";
 import ShowCard from "./ShowCard";
 import Header from "./Header";
 
-class Search extends Component {
+type props = {
+	shows: Array<Show>
+};
+
+class Search extends Component<props> {
 	state = {
 		searchTerm: ""
-	};
-	props: {
-		shows: Array<Show>
 	};
 
 	handleSearchTermChange = (event: SyntheticKeyboardEvent & { target: HTMLInputElement }) => {

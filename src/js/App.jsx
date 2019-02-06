@@ -23,7 +23,7 @@ const App = () => (
 						return <Details show={selectedShow} {...props} />;
 					}}
 				/>
-				<Route component={FourOhFour} />
+				<Route      component={FourOhFour} />
 			</Switch>
 		</div>
 	</BrowserRouter>
